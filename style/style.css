@@ -1,0 +1,109 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  background-color: #fc0f78;
+  padding: 70px;
+}
+
+.name {
+  grid-column: 1 / span 1;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.social-links {
+  grid-column: 1 / span 1;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+.work-info {
+  grid-column: 3 / span 1;
+  justify-self: end;
+  
+  
+}
+
+.work-info a{
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.work-info a:hover {
+   color: blue;
+   }
+   
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 100%; /* IE10 */
+  flex: 25%;
+  max-width: 100%;
+  padding: 10px 10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #fc0f78;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#backToTopBtn:hover {
+  background-color: #555;
+}
+
+
+
+
