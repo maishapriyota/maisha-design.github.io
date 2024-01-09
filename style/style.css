@@ -27,6 +27,7 @@ body {
   grid-column: 1 / span 1;
   color: white;
   font-size: 14px;
+  font-weight: bold;
 }
 
 
@@ -55,19 +56,19 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 12px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 100%; /* IE10 */
-  flex: 25%;
+  flex: 10%;
   max-width: 100%;
-  padding: 10px 10px;
+  padding: 15px 10px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 100px;
   vertical-align: middle;
   width: 100%;
 }
@@ -104,6 +105,119 @@ body {
   background-color: #555;
 }
 
+.overlay {
+	background-image: url("carpool.png") ;
+	background-size: 615px;
+	width: 615px; 
+    height: 500px; 
+    margin:5px;
+}
+
+.overlay:hover {
+	background-image: url("carpool1.png") ;
+	
+}
+	
+.overlay1 {
+	background-image: url("musicplayer.jpeg") ;
+	
+	background-size: 615px;
+	width: 615px; 
+    height: 600px; 
+	margin:5px;
+}
+
+.overlay1:hover {
+	background-image: url("musicplayer1.png") ;
+}
+	
+.overlay2 {
+	background-image: url("wireframe.png") ;
+	background-size: 615px;
+	width: 615px; 
+    height: 400px; 
+	margin:5px;
+}
+
+.overlay2:hover {
+	background-image: url("musicplayer1.png") ;
+}
+	
+.overlay3 {
+	background-image: url("foodapp.jpg") ;
+	background-size: 650px;
+	width: 650px; 
+    height: 500px; 
+	margin:5px;
+}
+
+.overlay3:hover {
+	background-image: url("foodapp.png") ;
+}
+	
+.overlay4 {
+	background-image: url("certificate.jpg") ;
+	background-size: 650px;
+	width: 650px; 
+    height: 470px; 
+	margin:5px;
+}
+
+.overlay4:hover {
+	background-image: url("certificate1.png") ;
+}
+	
+.overlay5 {
+	background-image: url("portfolio.jpg") ;
+	background-size: 650px;
+	width: 650px; 
+    height: 400px; 
+	margin:5px;
+}
+
+.overlay5:hover {
+	background-image: url("portfolio1.png") ;
 
 
+/* For mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
 
+  .name,
+  .social-links,
+  .work-info {
+    grid-column: 1 / span 1;
+    text-align: center; /* Center align content for smaller screens */
+  }
+
+  .work-info {
+    justify-self: center;
+  }
+
+  .column {
+    -ms-flex: 100%;
+    flex: 100%; /* Occupy full width for smaller screens */
+    max-width: 100%;
+    padding: 10px 5px; /* Adjust padding for smaller screens */
+  }
+
+  .column img {
+    margin-top: 30px; /* Decrease top margin for images on smaller screens */
+  }
+
+  /* Adjust overlay images for smaller screens */
+  .overlay,
+  .overlay1,
+  .overlay2,
+  .overlay3,
+  .overlay4,
+  .overlay5 {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    background-size: cover; /* Ensure images cover the entire space */
+  }
+}
